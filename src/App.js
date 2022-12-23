@@ -59,7 +59,7 @@ export default memo(function App() {
         "https://api-inference.huggingface.co/models/microsoft/DialoGPT-large",
         {
           headers: {
-            Authorization: `Bearer ${process.env.REACT_APP_INFERENCE_API_TOKEN}`,
+            Authorization: `Bearer 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`,
           },
           method: "POST",
           body: JSON.stringify(requestBody),
