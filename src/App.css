@@ -1,38 +1,76 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  padding: 20px;
+  width: 100vw;
+  overflow: hidden;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 20%;
+}
+.micIcon {
+  margin-top: 30px;
+  background-color: white;
+  padding: 10px;
+  font-size: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+.micIcon:hover {
+  color: red;
+  transform: scale(1.1);
+}
+.answerBox {
+  margin-top: 30px;
+  padding: 40px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+}
+.clearBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: lightgrey; 
+  border-radius: 5px;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid lightgrey;
+  transition: 0.2s all ease;
+}
+.clearBtn:hover {
+  color: red;
+  background: white;
+  transform: scale(1.1);
+}
+.outputRow {
+  width: 100%;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+.aiRow {
+  background: grey;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.liveInput {
+  color: green;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+  
 }
