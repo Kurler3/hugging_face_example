@@ -12,7 +12,7 @@ export default memo(function App() {
 
   const {
     transcript,
-    listening,
+    // listening,
     resetTranscript,
     browserSupportsSpeechRecognition,
   } = useSpeechRecognition();
