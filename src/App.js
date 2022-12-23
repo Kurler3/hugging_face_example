@@ -110,7 +110,7 @@ export default memo(function App() {
 
   return (
     <div className="App">
-      <div className="title">Click on the mic to start generating text</div>
+      <div className="title">Press and hold down the mic to speak!</div>
 
       {/* MIC */}
       <button
