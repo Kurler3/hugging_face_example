@@ -56,10 +56,10 @@ export default memo(function App() {
 
       // FETCH AI ANSWER
       const response = await fetch(
-        "https://api-inference.huggingface.co/models/microsoft/DialoGPT-large",
+        "https://api.openai.com/v1/engines/davinci/completions",
         {
           headers: {
-            Authorization: `Bearer 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`,
+            Authorization: `Bearer ${process.env.REACT_APP_OPEN_AI_TOKEN}`,
           },
           method: "POST",
           body: JSON.stringify(requestBody),
